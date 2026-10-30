@@ -1,8 +1,8 @@
 - url: https://bridgerbowl.com/weather/live#Header_Text
   output: boundaries.png
   scale_factor: 3
-  width: 1600
-  height: 1200
+  width: 1480
+  height: 1120
   wait: 2000
   javascript: |
     new Promise(resolve => {
