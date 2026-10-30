@@ -1,4 +1,4 @@
-- url: https://bridgerbowl.com/weather/live#Boundaries
+- url: https://bridgerbowl.com/weather/live#PathDefintions
   output: boundaries.png
   width: 1480
   height: 1120
