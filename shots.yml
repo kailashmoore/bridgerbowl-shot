@@ -1,0 +1,5 @@
+- url: https://bridgerbowl.com/weather/live#Boundaries
+  output: boundaries.png
+  width: 1400
+  height: 900
+  wait: 5000
