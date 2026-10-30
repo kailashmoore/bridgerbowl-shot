@@ -1,4 +1,4 @@
-- url: https://bridgerbowl.com/weather/live#Boundaries
+- url: https://bridgerbowl.com/weather/live#Header_Text
   output: boundaries.png
   width: 1400
   height: 900
