@@ -1,5 +1,26 @@
-- url: https://bridgerbowl.com/weather/live#Header_Text
+- url: https://bridgerbowl.com/weather/live#Boundaries
   output: boundaries.png
-  width: 1400
-  height: 900
-  wait: 5000
+  width: 1480
+  height: 1120
+  wait: 2000
+  javascript: |
+    new Promise(resolve => {
+      // Hide the dialog, its dark backdrop, and the small floating widget
+      const style = document.createElement('style');
+      style.textContent = `
+        #CybotCookiebotDialog,
+        #CybotCookiebotDialogBodyUnderlay,
+        #CybotCookiebotWidget
+        { display: none !important; visibility: hidden !important; }
+        html, body { overflow: auto !important; }
+      `;
+      document.head.appendChild(style);
+
+      // Click "Decline" if the dialog appears, so the choice is recorded for this session
+      let tries = 0;
+      const timer = setInterval(() => {
+        const decline = document.querySelector('#CybotCookiebotDialogBodyButtonDecline');
+        if (decline) decline.click();
+        if (decline || ++tries >= 12) { clearInterval(timer); setTimeout(resolve, 1000); }
+      }, 500);
+    })
