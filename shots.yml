@@ -31,7 +31,7 @@
   output: bigsky.png
   width: 1480
   height: 1120
-  scale_factor: 2
+  scale_factor: 3
   wait: 6000
   javascript: &hide_banners |
     new Promise(resolve => {
@@ -52,6 +52,6 @@
   output: gnfac.png
   width: 1480
   height: 1120
-  scale_factor: 2
+  scale_factor: 3
   wait: 4000
   javascript: *hide_banners
