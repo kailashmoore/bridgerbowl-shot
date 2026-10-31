@@ -40,7 +40,7 @@ jobs:
         run: |
           set -euo pipefail
           rm -rf /tmp/publish && mkdir /tmp/publish
-          cp boundaries.png index.html /tmp/publish/
+          cp *.png *.html /tmp/publish/
           cd /tmp/publish
           git init -q -b latest
           git config user.name  "github-actions[bot]"
