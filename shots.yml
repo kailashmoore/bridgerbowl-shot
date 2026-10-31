@@ -29,8 +29,8 @@
 
 - url: https://www.bigskyresort.com/current-conditions#snowDepthFrame
   output: bigsky.png
-  width: 1920
-  height: 1080
+  width: 1480
+  height: 1120
   scale_factor: 2
   wait: 6000
   javascript: &hide_banners |
@@ -50,8 +50,8 @@
 
 - url: https://www.mtavalanche.com/forecast#block-gnfac-theme-page-title
   output: gnfac.png
-  width: 1920
-  height: 1080
+  width: 1480
+  height: 1120
   scale_factor: 2
   wait: 4000
   javascript: *hide_banners
