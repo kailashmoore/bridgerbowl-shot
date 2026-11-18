@@ -48,7 +48,7 @@
       setTimeout(resolve, 1500);
     })
 
-- url: https://www.mtavalanche.com/forecast#block-gnfac-theme-page-title
+- url: https://www.mtavalanche.com/avalanche-forecast#/bridger-range/#block-gnfac-theme-page-title:~:text=Print-,ISSUED
   output: gnfac.png
   width: 1480
   height: 1120
